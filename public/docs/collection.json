@@ -1,0 +1,635 @@
+{
+    "variables": [],
+    "info": {
+        "name": "Lumen API",
+        "_postman_id": "9a90d943-7504-4708-b7a9-e08391f5c193",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.0.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "1 - Client",
+            "description": "\nAPIs for managing clients",
+            "item": [
+                {
+                    "name": "List clients",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "api\/clients",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "Returns a list of clients.",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Insert client",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "api\/clients",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "Store a new client.",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Update client",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "api\/clients\/:id",
+                            "query": []
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "Update a existing client.",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Delete client",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "api\/clients\/:id",
+                            "query": []
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "Deletes a existing client.",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "2 - Collaborator",
+            "description": "\nAPIs for managing collaborators",
+            "item": [
+                {
+                    "name": "List collaborators",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "api\/collaborators",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "Returns a list of collaborators.",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Insert collaborator",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "api\/collaborators",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "Store a new collaborator.",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Update collaborator",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "api\/collaborators\/:id",
+                            "query": []
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "Update a existing collaborator.",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Delete collaborator",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "api\/collaborators\/:id",
+                            "query": []
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "Deletes a existing collaborator.",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "3 - Store",
+            "description": "\nAPIs for managing stores",
+            "item": [
+                {
+                    "name": "List stores",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "api\/stores",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "Returns a list of stores.",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Insert store",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "api\/stores",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "Store a new store.",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Update store",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "api\/stores\/:id",
+                            "query": []
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "Update a existing store.",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Delete store",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "api\/stores\/:id",
+                            "query": []
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "Deletes a existing store.",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "4 - Transaction",
+            "description": "\nAPIs for managing transactions",
+            "item": [
+                {
+                    "name": "List transactions",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "api\/transactions",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "Returns a list of transactions.",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Insert transaction",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "api\/transactions",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "Store a new transaction.",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Update transaction",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "api\/transactions\/:id",
+                            "query": []
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "Update a existing transaction.",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "5 -Evaluation",
+            "description": "\nAPIs for managing evaluations",
+            "item": [
+                {
+                    "name": "List evaluations",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "api\/evaluations",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "Returns a list of evaluations.",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Insert evaluation",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "api\/evaluations",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "Store and update an evaluation.",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "general",
+            "description": "",
+            "item": [
+                {
+                    "name": "Dump api-docs.json content endpoint.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "docs",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Display Swagger API page.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "api\/documentation",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "swagger-ui-assets\/{asset}",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "swagger-ui-assets\/:asset",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Display Oauth2 callback pages.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost:9090",
+                            "path": "api\/oauth2-callback",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        }
+    ]
+}

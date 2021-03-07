@@ -1,0 +1,399 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Customer Experience OpenApi",
+        "description": "Api for customer experience evaluation.",
+        "contact": {
+            "email": "william.melise@gmail.com"
+        },
+        "license": {
+            "name": "MIT License",
+            "url": "https://github.com/williamCarvalho/lumen-customer-experience/blob/main/LICENSE"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:9090/api",
+            "description": "Customer Experience API"
+        }
+    ],
+    "paths": {
+        "/clients": {
+            "get": {
+                "tags": [
+                    "client"
+                ],
+                "summary": "Returns a list of clients",
+                "description": "Returns a object of clients",
+                "operationId": "getClientsList",
+                "responses": {
+                    "200": {
+                        "description": "A list with clients"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "client"
+                ],
+                "summary": "Store a new client",
+                "description": "Store a client and returns a message",
+                "operationId": "storeClient",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "multipart/form-data": {}
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Store a client and returns a message."
+                    }
+                }
+            }
+        },
+        "/clients/{id}": {
+            "put": {
+                "tags": [
+                    "client"
+                ],
+                "summary": "Update a existing client",
+                "description": "Update a client and returns a message",
+                "operationId": "updateClient",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Client id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "multipart/form-data": {}
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Update a client and returns a message."
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "client"
+                ],
+                "summary": "Deletes a existing client",
+                "description": "Deletes a client and returns a message",
+                "operationId": "deleteClient",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Client id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Deletes a client and returns a message."
+                    }
+                }
+            }
+        },
+        "/collaborators": {
+            "get": {
+                "tags": [
+                    "collaborator"
+                ],
+                "summary": "Returns a list of collaborators",
+                "description": "Returns a object of collaborators",
+                "operationId": "getCollaboratorsList",
+                "responses": {
+                    "200": {
+                        "description": "A list with collaborators"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "collaborator"
+                ],
+                "summary": "Store a new collaborator",
+                "description": "Store a collaborator and returns a message",
+                "operationId": "storeCollaborator",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "multipart/form-data": {}
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Store a collaborator and returns a message."
+                    }
+                }
+            }
+        },
+        "/collaborators/{id}": {
+            "put": {
+                "tags": [
+                    "collaborator"
+                ],
+                "summary": "Update a existing collaborator",
+                "description": "Update a collaborator and returns a message",
+                "operationId": "updateCollaborator",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Collaborator id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "multipart/form-data": {}
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Update a collaborator and returns a message."
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "collaborator"
+                ],
+                "summary": "Deletes a existing collaborator",
+                "description": "Deletes a collaborator and returns a message",
+                "operationId": "deleteCollaborator",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Collaborator id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Deletes a collaborator and returns a message."
+                    }
+                }
+            }
+        },
+        "/evaluations": {
+            "get": {
+                "tags": [
+                    "evaluation"
+                ],
+                "summary": "Returns a list of evaluations",
+                "description": "Returns a object of evaluations",
+                "operationId": "getEvaluationsList",
+                "responses": {
+                    "200": {
+                        "description": "A list with evaluations"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "evaluation"
+                ],
+                "summary": "Store and update an evaluation",
+                "description": "Store a evaluation and returns a message",
+                "operationId": "storeEvaluation",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "multipart/form-data": {}
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Store a evaluation and returns a message."
+                    }
+                }
+            }
+        },
+        "/stores": {
+            "get": {
+                "tags": [
+                    "store"
+                ],
+                "summary": "Returns a list of stores",
+                "description": "Returns a object of stores",
+                "operationId": "getStoresList",
+                "responses": {
+                    "200": {
+                        "description": "A list with stores"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "store"
+                ],
+                "summary": "Store a new store",
+                "description": "Store a store and returns a message",
+                "operationId": "storeStore",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "multipart/form-data": {}
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Store a store and returns a message."
+                    }
+                }
+            }
+        },
+        "/stores/{id}": {
+            "put": {
+                "tags": [
+                    "store"
+                ],
+                "summary": "Update a existing store",
+                "description": "Update a store and returns a message",
+                "operationId": "updateStore",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Store id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "multipart/form-data": {}
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Update a store and returns a message."
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "store"
+                ],
+                "summary": "Deletes a existing store",
+                "description": "Deletes a store and returns a message",
+                "operationId": "deleteStore",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Store id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Deletes a store and returns a message."
+                    }
+                }
+            }
+        },
+        "/transactions": {
+            "get": {
+                "tags": [
+                    "transaction"
+                ],
+                "summary": "Returns a list of transactions",
+                "description": "Returns a object of transactions",
+                "operationId": "getTransactionsList",
+                "responses": {
+                    "200": {
+                        "description": "A list with transactions"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "transaction"
+                ],
+                "summary": "Store a new transaction",
+                "description": "Store a transaction and returns a message",
+                "operationId": "storeTransaction",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "multipart/form-data": {}
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Store a transaction and returns a message."
+                    }
+                }
+            }
+        },
+        "/transactions/{id}": {
+            "put": {
+                "tags": [
+                    "transaction"
+                ],
+                "summary": "Update a existing transaction",
+                "description": "Update a transaction and returns a message",
+                "operationId": "updateTransaction",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Transaction id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "multipart/form-data": {}
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Update a transaction and returns a message."
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Customer Experience",
+            "description": "API Endpoints of Customer Experience"
+        }
+    ]
+}
