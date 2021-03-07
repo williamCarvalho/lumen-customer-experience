@@ -1,8 +1,12 @@
 # Api Customer Experience
 
-## Configuração
+## Requisitos
+- php 7.3
+- MariaDB 10.4
+- phpMyAdmin
 
-Abra a pasta root do projeto no terminal, em seguida execute os comandos na ordem:
+## Configuração
+Abra a pasta root do projeto no terminal, em seguida execute os comandos respeitando a ordem:
 - composer install
 - cp .env.example .env
 - docker-compose build
